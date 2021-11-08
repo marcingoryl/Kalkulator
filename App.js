@@ -177,7 +177,7 @@ export default class App extends Component {
     const col2Buttons = ['÷', 'x', '-', '+', '=']
     return (
       <View style={styles.container}>
-        <Text style={styles.displayVertival}>{ this.state.display } </Text>
+        <Text style={styles.displayVertical}>{ this.state.display } </Text>
         <View style={styles.buttons}>
           <View style={styles.col1}> 
             { col1Buttons.map( (line, ind) => <View  key={ind} style={styles.line}>                     
@@ -284,7 +284,7 @@ const styles = StyleSheet.create({
     alignItems: 'stretch',
     backgroundColor: '#F5FCFF',
   },
-  displayVertival: {
+  displayVertical: {
     flex: 1,
     backgroundColor: '#484848',
     fontSize: 70,
